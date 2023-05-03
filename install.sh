@@ -54,7 +54,8 @@ sudo chmod -R +x /usr/bin/PixelatedStudios/Ruby/
 # Prompt user to run the program for the first time
 read -p "Do you want to run the program for the first time? (y/n) " answer
 if [[ $answer =~ ^[Yy]$ ]]; then
-  ruby run_backup.rb
+  cd /usr/bin/PixelatedStudios/Ruby/Ru-b2-SQL-Backups
+  ruby starter.rb
 else
   exit 0
 fi
